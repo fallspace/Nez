@@ -123,7 +123,7 @@ namespace Nez.ImGuiTools
 						subclassType.Name.ToLower().Contains(_componentNameFilter.ToLower()))
 					{
 						// stick a seperator in after custom Components and before Colliders
-						if (!isNezType && subclassType.Namespace.StartsWith("Nez"))
+						if (!isNezType && subclassType.Namespace != null && subclassType.Namespace.StartsWith("Nez"))
 						{
 							isNezType = true;
 							ImGui.Separator();

@@ -39,8 +39,8 @@ namespace Nez.ImGuiTools
 
 					if (!tIsCollider && !uIsCollider)
 					{
-						var tIsNez = t.Namespace.StartsWith("Nez");
-						var uIsNez = u.Namespace.StartsWith("Nez");
+						var tIsNez = t.Namespace?.StartsWith("Nez") ?? false;
+						var uIsNez = u.Namespace?.StartsWith("Nez") ?? false;
 
 						if (tIsNez && uIsNez || !tIsNez && !uIsNez)
 							return t.Name.CompareTo(u.Name);
