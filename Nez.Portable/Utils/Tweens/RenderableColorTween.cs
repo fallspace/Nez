@@ -10,7 +10,7 @@ namespace Nez.Tweens
 
 		public void SetTweenedValue(Color value)
 		{
-			_renderable.Color = value;
+			_renderable.SetColor(value);
 		}
 
 

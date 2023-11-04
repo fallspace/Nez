@@ -133,7 +133,14 @@ namespace Nez
 		/// </summary>
 		/// <returns>The color.</returns>
 		/// <param name="color">Color.</param>
-		public new Mesh SetColor(Color color)
+		// public new Mesh SetColor(Color color)
+		// {
+		// 	Color = color;
+		// 	SetColorForAllVerts(color);
+		// 	return this;
+		// }
+		
+		public override RenderableComponent SetColor(Color color)
 		{
 			Color = color;
 			SetColorForAllVerts(color);

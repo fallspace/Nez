@@ -233,7 +233,7 @@ namespace Nez
 		/// </summary>
 		/// <returns>The color.</returns>
 		/// <param name="color">Color.</param>
-		public RenderableComponent SetColor(Color color)
+		public virtual RenderableComponent SetColor(Color color)
 		{
 			Color = color;
 			return this;
